@@ -1,0 +1,15 @@
+[project]
+name = "laya-ai-demo"
+version = "0.1.0"
+description = "Quick demo of Laya, the open-source System 1 decision model, triaging support tickets in several languages."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "laya==0.3.22",
+]
+
+[tool.uv]
+# The stock PyPI torch wheel is fine on Apple silicon (MPS) and Linux CPU.
+# For an NVIDIA box, add --torch-backend=auto to `uv sync` instead of editing this file.
+package = false
